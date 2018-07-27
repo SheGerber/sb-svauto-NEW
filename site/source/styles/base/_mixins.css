@@ -1,0 +1,26 @@
+
+@define-mixin forSml {
+	@media (min-width: 530px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin forMed {
+	@media (min-width: 800px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin forLrg {
+	@media (min-width: 1010px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin clearFix {
+	&::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}

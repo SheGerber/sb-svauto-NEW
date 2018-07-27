@@ -1,0 +1,15 @@
+/***  START Global   ***/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(to right, #1e1c1a, #ff0000);
+	font-family: $bodyFont, sans-serif;
+	color: #000;
+}
+
+img {
+	height: auto;
+}
+/***  END Global   ***/

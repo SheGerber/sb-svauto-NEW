@@ -1,0 +1,23 @@
+$mainColor: #ff0066;
+$minorColor: #24a7b9;
+
+$lightColor: #fff;
+$darkColor: #000;
+
+$lightDarkColor: $lightColor;  
+$darkLightColor: $darkColor;
+
+
+$bodyFont: 'Archivo Narrow';
+$h1Font: '';
+$h2font: '';
+
+
+
+
+$floatLeft: left;
+$floatRight: right;
+$floatNone: none;
+
+$floatMainNav: $floatNone;
+$floatNavLinks: $floatLeft;
