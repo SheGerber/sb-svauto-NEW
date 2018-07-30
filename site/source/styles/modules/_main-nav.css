@@ -1,0 +1,61 @@
+/***  START Main Nav  ***/
+.main-nav {
+	padding-top:  10px;
+
+	@mixin forMed {
+		padding-top: 0;
+	}
+
+	&--float {
+		@mixin forMed {
+			float: $floatMainNav;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		@mixin clearFix;
+	}
+
+	li {
+		display: inline-block;
+		list-style: none;
+		padding-right: 7px;
+
+		@mixin forMed {
+			display: block;
+			float: $floatNavLinks;
+			padding-right: 20px;
+		}
+	}
+
+	li:last-child {
+		padding-right: 0;
+
+		@mixin forMed {
+			padding-right: 20px;
+		}
+	}
+
+	a {
+		background-color: rgba($mainColor, .5);
+		color: $lightDarkColor;
+		display: block;
+		font-size: .8rem;
+		font-weight: 300;
+		padding: 5px 8px;
+		text-decoration: none;
+
+		@mixin forMed {
+			background-color: transparent;
+			font-size: 1rem;
+			padding: 12px 0;
+
+			&.current-list-item {
+				color: $minorColor;
+			}
+		}
+	}
+}
+/***  END Main Nav  ***/

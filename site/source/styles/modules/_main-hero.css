@@ -1,0 +1,61 @@
+/***  START Main Hero Image  ***/
+.main-hero {
+	border-bottom: 10px solid $mainColor;
+	position: relative;
+
+	&__img {
+		display: block;
+	}
+
+	&__text-content {
+		padding-top: 88px;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+
+		@mixin forMed {
+			padding-top: 60px;
+		}
+	}
+
+	&__title {
+		background-color: rgba($redColor, .25);
+		color: $mainColor;
+		font-size: 2.4rem;
+		font-weight: 300;
+		margin: 0;
+
+		@mixin forSml {
+			font-size: 4.8rem;
+		}
+	}
+
+	&__subtitle {
+		background-color: rgba($redColor, .25);
+		color: $mainColor;
+		font-size: 1.5rem;
+		font-weight: 300;
+		margin: 0;
+
+		@mixin forSml {
+			font-size: 2.9rem;
+		}
+	}
+
+	&__description {
+		background-color: rgba($redColor, .25);
+		color: $lightDarkColor;
+		font-size: 1.1rem;
+		font-weight: 300;
+		text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+		margin: 0 auto;
+		max-width: 30rem; 
+
+		@mixin forSml {
+			font-size: 1.875rem;
+		}
+	}
+}
+/***  END Main Hero Image  ***/

@@ -4,12 +4,13 @@
 }
 
 body {
-	background-image: linear-gradient(to right, #1e1c1a, #ff0000);
+	background-color: #fff;
 	font-family: $bodyFont, sans-serif;
 	color: #000;
 }
 
 img {
 	height: auto;
+	max-width: 100%;
 }
 /***  END Global   ***/

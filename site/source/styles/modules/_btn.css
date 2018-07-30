@@ -1,0 +1,18 @@
+/***  START Button  ***/
+.btn {
+	background-color: $minorColor;
+	color: $lightDarkColor;
+	display: inline-block;
+	padding: .75rem 1.2rem;
+	text-decoration: none;
+
+	&--minor {
+		background-color: $minorColor;
+	}
+
+	&--large {
+		font-size: 1.25rem;
+		padding: 1.1rem 1.9rem;
+	}
+}
+/***  END Button  ***/

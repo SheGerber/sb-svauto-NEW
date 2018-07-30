@@ -1,0 +1,27 @@
+/***  START Social Icons  ***/
+.social-icons {
+	text-align: center;
+
+	&__icon {
+		background-color: $minorColor;
+		border-radius: 10px;
+		display: inline-block;
+		height: 73px;
+		margin: 0 7px 7px 7px;
+		position: relative;
+		width: 33%;
+
+		@mixin forMed {
+			margin: 0 5px;
+			width: 73px;
+		}
+
+		.icon {
+			display: block;
+			left: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}/***  END Social Icons  ***/

@@ -1,14 +1,22 @@
-$mainColor: #ff0066;
-$minorColor: #24a7b9;
-
-$lightColor: #fff;
 $darkColor: #000;
+$lightColor: #fff;
+$ltgreyColor: #828387;
+$dkgreyColor: #242021;
+$redColor: #ed1b24;
+$blueColor: #2455a1;
+$silverColor: #97a0a9;
+
+
+
+
+$mainColor: $darkColor;
+$minorColor: $redColor;
 
 $lightDarkColor: $lightColor;  
 $darkLightColor: $darkColor;
 
 
-$bodyFont: 'Archivo Narrow';
+$bodyFont: 'Roboto';
 $h1Font: '';
 $h2font: '';
 
@@ -19,5 +27,5 @@ $floatLeft: left;
 $floatRight: right;
 $floatNone: none;
 
-$floatMainNav: $floatNone;
+$floatMainNav: $floatRight;
 $floatNavLinks: $floatLeft;

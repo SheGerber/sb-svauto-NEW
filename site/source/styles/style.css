@@ -1,0 +1,27 @@
+@import "normalize.css";
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
+
+
+/***  START Main Styles ***/
+@import "main/_container";
+@import "main/_sprite";
+@import "main/_content";
+@import "main/_row";
+@import "main/_section";
+/***  END Main Styles ***/
+
+
+/***  START Site Modules Styles ***/
+@import "modules/_main-header";
+@import "modules/_main-nav";
+@import "modules/_main-hero";
+@import "modules/_main-footer";
+@import "modules/_btn";
+@import "modules/_modal-contact";
+@import "modules/_social-icons";
+/***  END Site Modules Styles ***/
+
+
+

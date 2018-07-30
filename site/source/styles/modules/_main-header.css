@@ -1,0 +1,146 @@
+/***  START Main Header  ***/
+.main-header {
+	position: absolute;  
+	transition: background-color .3s ease-out;
+	width: 100%;
+	z-index: 10;
+
+	@mixin forMed {
+		background-color: rgba($mainColor, .9);
+		padding: 37px 0;
+		position: relative;  /* fixed */
+
+		&--sticky {
+			background-color: rgba($mainColor, .75);
+		}
+	}
+
+	@mixin forLrg {
+		background-color: rgba($mainColor, .9);
+		padding: 59px 0;
+		position: relative;  /* fixed */
+
+		&--sticky {
+			background-color: rgba($mainColor, .75);
+		}
+	}
+
+
+	&--showMenu {
+		background-color: rgba($minorColor, .55);
+	}
+
+
+
+	&__logo {
+		left: 16.7%;
+		position: absolute;
+		top: 0;
+		transform: translateX(-50%) scale(.4);
+		transform-origin: 50% 0;
+		transition: all .3s ease-out;
+
+		@mixin forMed {
+			left: -215px;
+			transform: translateX(0) scale(.5);
+
+			.main-header--sticky & {
+				transform: scale(.555);
+			}
+		}
+
+		@mixin forLrg {
+			left: -130px;
+			transform: translateX(0) scale(.7);
+
+			.main-header--sticky & {
+				transform: scale(.555);
+			}
+		}		
+	}
+
+	&__btn-contact {
+			float: $floatMainNav;
+	}
+
+	&__menu-icon {
+		height: 19px;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		width: 20px;
+		z-index: 20;
+
+		&::before,
+		&::after,
+		&__bar {
+			background-color: $lightDarkColor;
+			content: '';
+			height: 3px;
+			left: 0;
+			position: absolute;
+			transition: transform .3s ease-out;
+			width: 20px;
+		}
+
+		&::before {
+			top: 0;
+			transform-origin: 0 0;
+		}		
+
+		&::after {
+			bottom: 0;
+			transform-origin: 0 100%;
+		}
+
+		&__bar {
+			top: 8px;
+			transform-origin: 0 50%;
+			transition: all .3s ease-out;
+		}
+
+
+		@mixin forMed {
+			display: none;
+		}
+	}
+
+	&__menu-icon--closeX {
+		&::before {
+			transform: rotate(45deg) scaleX(1.25);
+		}
+
+		.main-header__menu-icon__bar {
+			opacity: 0;
+			transform: scaleX(0);
+		}
+
+		&::after {
+			transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+		}
+	}
+
+	&__menu-content {
+		opacity: 0;
+		padding-top: 70px;
+		position: relative;
+		text-align: center;
+		transform: scale(1.2);
+		transition: all .3s ease-out;
+		z-index: -10;
+
+		@mixin forMed {
+			opacity: 1;
+			padding-top: 0;
+			transform: scale(1);
+			z-index: 1;
+		}
+
+		&--showMenu {
+			opacity: 1;
+			transform: scale(1);
+			z-index: 1;
+		}
+	}
+}
+/***  END Main Header  ***/
