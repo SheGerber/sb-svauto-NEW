@@ -1,0 +1,16 @@
+.misc {
+	
+
+	&__youtube-video {
+		width: 450px;
+	}
+}
+
+
+
+.lexus {
+
+	img {
+			border-radius: 20px;
+		}
+}

@@ -5,6 +5,7 @@ require('./gulp/tasks/modernizr');
 require('./gulp/tasks/build');
 
 
+require('./gulp/tasks/favicon');
 require('./gulp/tasks/sprites');
 
 /***  FOR GOLIVE -- SHE

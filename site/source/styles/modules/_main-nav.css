@@ -1,37 +1,42 @@
 /***  START Main Nav  ***/
 .main-nav {
-	padding-top:  10px;
+	padding-top:  20px;
 
 	@mixin forMed {
 		padding-top: 0;
 	}
 
 	&--float {
-		@mixin forMed {
-			float: $floatMainNav;
-		}
+		float: $floatMainNav;
 	}
 
 	ul {
-		margin: 0;
+		margin: 9px 0;
 		padding: 0;
 		@mixin clearFix;
 	}
 
 	li {
-		display: inline-block;
+		display: block;
+		float: $floatNavLinks;
 		list-style: none;
-		padding-right: 7px;
+		padding-right: 13px;
+
+		@mixin forSml {
+			padding-right: 27px;
+		}
 
 		@mixin forMed {
-			display: block;
-			float: $floatNavLinks;
 			padding-right: 20px;
 		}
 	}
 
 	li:last-child {
-		padding-right: 0;
+		padding-right: 5px;
+
+		@mixin forSml {
+			padding-right: 40px;
+		}
 
 		@mixin forMed {
 			padding-right: 20px;
@@ -39,7 +44,7 @@
 	}
 
 	a {
-		background-color: rgba($mainColor, .5);
+		background-color: $ltgreyColor;
 		color: $lightDarkColor;
 		display: block;
 		font-size: .8rem;
@@ -55,6 +60,15 @@
 			&.current-list-item {
 				color: $minorColor;
 			}
+
+			&:hover {
+				color: $ltgreyColor;
+			}
+		}
+
+		@mixin forLrg {
+			font-size: 1.275rem;
+			padding-top: 15px;
 		}
 	}
 }

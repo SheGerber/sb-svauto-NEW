@@ -19,8 +19,11 @@
 @import "modules/_main-hero";
 @import "modules/_main-footer";
 @import "modules/_btn";
+@import "modules/_box";
+@import "modules/_misc";
 @import "modules/_modal-contact";
 @import "modules/_social-icons";
+@import "modules/_sponsor";
 /***  END Site Modules Styles ***/
 
 

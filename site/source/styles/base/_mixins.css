@@ -1,18 +1,18 @@
 
 @define-mixin forSml {
-	@media (min-width: 530px) {
+	@media (min-width: 550px) {
 		@mixin-content;
 	}
 }
 
 @define-mixin forMed {
-	@media (min-width: 800px) {
+	@media (min-width: 950px) {
 		@mixin-content;
 	}
 }
 
 @define-mixin forLrg {
-	@media (min-width: 1110px) {
+	@media (min-width: 1130px) {
 		@mixin-content;
 	}
 }

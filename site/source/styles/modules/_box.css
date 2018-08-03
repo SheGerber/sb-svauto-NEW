@@ -1,0 +1,62 @@
+.box {
+	background-color: rgba($redColor, .9);
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: $lightDarkColor;
+	font-family: 'Lato';
+	margin: 5px 5px;
+	padding: 5px;
+
+	@mixin forMed {
+		background-color: rgba($redColor, .6);
+	}
+
+	@mixin forLrg {
+		padding: 5px 20px;
+	}
+
+	&__title {
+		font-weight: 300;
+		font-size: 1.25rem;
+		margin: 0;
+		padding: 10px 0 5px 0;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+
+		@mixin forMed {
+			font-size: 1.5rem;
+			padding: 20px 0 10px 0;
+		}
+
+		@mixin forLrg {
+			font-size: 1.875rem;
+		}
+	}
+
+	&__subtitle {
+		color: $dkgreyColor;
+		font-size: 1rem;
+		font-style: italic;
+		font-weight: 700;
+		margin: 0;
+		padding-bottom: 10px;
+		
+		@mixin forLrg {
+			font-size: 1.25rem;
+		}
+	}
+
+	p {
+		font-size: .875rem;
+		font-weight: 500;
+
+		@mixin forLrg {
+			font-size: 1rem;
+		}
+
+		strong {
+			color: $ltgreyColor;
+		}
+	}
+
+
+}

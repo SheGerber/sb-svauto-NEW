@@ -1,0 +1,40 @@
+.sponsor {
+    padding: 10px;
+
+
+	img {
+		border-radius: 7px;
+	}
+
+	&--carcare-one {
+
+		img {
+			border-radius: 10px;
+		}
+	}
+
+	&--hankook {
+		margin: 20px;
+
+		img {
+			border-radius: 7px;
+		}
+	}	
+
+	&--hankook-tires {
+		padding: 40px 0 20px 80px;
+
+		img {
+			border-radius: 10px;
+		}
+	}
+
+	&--synchrony {
+		float: right;
+
+		img {
+			border-radius: 10px;
+		}
+	}
+
+}

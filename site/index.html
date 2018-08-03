@@ -4,10 +4,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>South Venice Auto Repair</title>
 	<meta name="keywords" content="auto repairs, auto service, auto care, venice car care, venice florida, south venice auto repair, venice auto repair service, uhaul, brakes, oil changes, tires, tune ups, fuel systems, a.c repairs, batteries, off road">
-	<meta name="description" content="South Venice Auto Repair was founded in 1991 by the Crawford Family. We keep an old fashioned attitude about work, and our customers, we want them to come back , and we want there kids to come back too and there kid's kids. So come on in and see the difference!">
+	<meta name="description" content="South Venice Auto Repair was founded in 1991 by the Crawford Family. We keep an old fashioned attitude about work, and our customers, we want them to come back, and we want there kids to come back too and there kid's kids. So come on in and see the difference!">
+
+<!-- favicon files -->
+<!-- generics -->
+<link rel="icon" href="src/images/favicon-32.png" sizes="32x32">
+<link rel="icon" href="src/images/favicon-57.png" sizes="57x57">
+<link rel="icon" href="src/images/favicon-76.png" sizes="76x76">
+<link rel="icon" href="src/images/favicon-96.png" sizes="96x96">
+<link rel="icon" href="src/images/favicon-128.png" sizes="128x128">
+<link rel="icon" href="src/images/favicon-228.png" sizes="228x228">
+
+<!-- Android -->
+<link rel="shortcut icon" sizes="196x196" href=“/path/to/favicon-196.png">
+
+<!-- iOS -->
+<link rel="apple-touch-icon" href="/path/to/favicon-120.png" sizes="120x120">
+<link rel="apple-touch-icon" href="path/to/favicon-152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="path/to/favicon-180.png" sizes="180x180">
+
+<!-- Windows 8 IE 10-->
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/path/to/favicon-144.png">
+
+<!-- Windows 8.1 + IE11 and above -->
+<meta name="msapplication-config" content="/path/to/browserconfig.xml" />
+
+
 
 	<!-- Google Fonts -->
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700|Archivo+Narrow|Lato">
 
 
   <!-- build:css src/css/style.css  -->
@@ -21,22 +47,24 @@
   <header class="main-header">
 	<div class="container">
   		<div class="main-header__logo">
-        <img src="src/images/logo.png" alt="South Venice Auto Repair">
+        <img src="src/images/logos/logo.png" alt="South Venice Auto Repair">
   		</div><!-- /main-header__logo -->
 		  <div class="main-header__menu-icon">
     		<div class="main-header__menu-icon__bar"></div>
   		</div>
   		<div class="main-header__menu-content">
         <div class="main-header__btn-contact">
-      		<a href="#" class="btn open-modal-contact">941-497-1044</a>
+      		<a href="#" class="btn open-modal-contact">Contact Us!</a>
 	    	</div>
 	    	<nav class="main-nav main-nav--float">
+        <div class="main-header__phone">
+          941-497-1044
+        </div>
 				<ul>
-					<li><a href="#" id="" class="current-list-item">Home</a></li>
-					<li><a href="#" id="">About</a></li>
+					<li><a href="index.html" id="" class="current-list-item">Home</a></li>
+					<li><a href="about.html" id="">About</a></li>
 					<li><a href="#" id="">Off-Road</a></li>
-          <li><a href="#" id="">Contact</a></li>
-          <li><a href="#" id="">Photos</a></li>
+          <li><a href="#" id="">Photo Gallery</a></li>
 				</ul>
 			</nav>
 		</div><!-- /main-header__menu-content -->
@@ -45,58 +73,155 @@
 
   <div class="main-hero">
   	<picture>
-
       <source srcset="src/images/shop-1920w.jpg 1920w">
       <source srcset="src/images/shop-1380w.jpg 1380w">
       <source srcset="src/images/shop-990w.jpg 990w">
   		<img class="main-hero__img" src="src/images/shop-640w.jpg" alt="South Venice Auto Repair Shop">
   	</picture>
-    <div class="main-hero__text-content">
+    <div class="main-hero__contact">
+      <a href="#" class="btn">Contact For Free Estimate!!</a> 
+    </div><!-- /main-hero__contact -->
+    <div class="main-hero__boxes">
       <div class="container">
-        <h1 class="main-hero__title">Auto Repair Your Way!</h1>
-        <h2 class="main-hero__subtitle">Come in and see.</h2>
-        <p class="main-hero__description">We appreciate our customers and know they want quality service.</p>
-        <p><a href="#" class="btn btn--orange btn--large modal-open">Call for Appt Today!</a></p>
-      </div>
-    </div>
+        <div class="row content">
+          <div class="row__col-sml-1third">
+            <div class="box">
+              <h3 class="box__title">FLEET SERVICES</h3>
+              <p>Whether a personal vehicle, or a whole fleet of business transport, we offer competitive rates at <strong>South Venice Auto Repair</strong>, for your company vehicles to be maintained or serviced.<br>
+              Bring us your FLEET, we will take care of it!</p>
+            </div><!-- /box -->
+          </div><!-- /row__col-sml-1third -->
+          <div class="row__col-sml-1third">
+            <div class="box">
+              <h3 class="box__title">SUPERCHARGE</h3>
+              <h4 class="box__subtitle">Supercharge your oil change!!</h4>
+              <p>Engine Performance Restoration Service. Modern engines make GREAT power and achieve GREAT mileage. This power and mileage comes at a cost, however. Deposits that form in the combustion chamber and fuel system  start to happen at very low mileage. RESTORE THE PERFORMANCE YOUR CAR STARTED WITH, Restore Compression - Clean Fuel System - Protect Engine!</p>
+            </div><!-- /box -->
+          </div><!-- /row__col-sml-1third -->
+          <div class="row__col-sml-1third">
+            <div class="box">
+              <h3 class="box__title">U-HAUL</h3>
+              <h4 class="box__subtitle">Your best moving value!</h4>
+              <p>U-Haul offers the newest and largest fleet of vans and trucks in the industry. U-Haul will get you to your new home or location safely, easily and comfortably, and at a low cost to you. Call for rates and bookings.</p>
+            </div><!-- /box -->
+          </div><!-- /row__col-sml-1third -->
+        </div><!-- /row content -->
+      </div><!-- /container -->
+    </div><!-- /main-hero__boxes -->
  </div><!-- /main-hero -->
 
-  <div class="section">
-  	<p>
-  		Integer mollis ullamcorper massa ac scelerisque. Nullam eu velit elementum, pretium erat et, pharetra massa. Nam gravida interdum nisi et ornare. Sed et odio tempus, luctus nunc vel, bibendum dolor. Fusce a scelerisque mi. Etiam ex urna, porta ac nunc eu, aliquam lacinia est. Curabitur tincidunt, urna sed fermentum auctor, velit sapien porttitor arcu, non euismod dolor purus nec sem. Nullam eu consectetur dolor. Phasellus molestie magna vel magna vehicula fermentum. Integer orci arcu, vestibulum vitae nulla eget, porttitor mattis ligula. Etiam pharetra placerat erat.
-  	</p>
-  </div><!-- /section -->
+  <div class="section section--btm-border">
+    <div class="container">
+      <div class="row row--top-btm-pad">
+        <div class="row__col-med-half row__col-lrg-1third--larger">
+          <div class="misc__youtube-video">
+            <iframe width="450" height="260" src="https://www.youtube-nocookie.com/embed/Wb7b9BLSkkw?start=10&showinfo=0&modestbranding=1" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+          </div><!-- /misc__youtube-video -->
+        </div><!-- /row__med-half row__lrg-1third--larger -->
+        <div class="row__col-med-half row__col-lrg-2third--smaller content">
+           <h2 class="center">
+            Having the right hands on the job makes a difference!
+          </h2>
+           <p>We take great pride providing quality car repair services! Our mechanics, specialty trained and ASE Certified, will take the time to explain what is wrong with your vehicle.  No job is too big or too small - whether it's an oil change, or rebuilding Grandpa's old Ford - we can help! It's what we do, and will continue to do for another 25 years!</p>
+           <div class="row">
+              <div class="row__col-1third">
+                <img src="src/images/logos/logo-ase.png" alt="ASE Logo">
+              </div>
+              <div class="row__col-1third"><br>
+                <img src="src/images/logos/logo-bbb.png" alt="BBB Logo">
+              </div>
+              <div class="row__col-1third">
+                <img src="src/images/logos/logo-aaa.png" alt="AAA Logo">
+              </div>
+           </div>
+        </div><!-- /row__col-med-half row__col-lrg-2third--smaller content -->
+      </div><!-- /row row--top-btm-pad -->
+    </div><!-- /container -->
+  </div><!-- /section section--btm-border -->
 
-  <div class="section">
-  	<p>
-  		Maecenas in nulla rhoncus massa euismod egestas. Vivamus id dignissim nisl. Phasellus consequat vehicula nisi, at auctor magna pulvinar a. Aliquam odio elit, aliquam eget dignissim id, maximus eu orci. Quisque hendrerit lorem imperdiet nibh molestie, sed efficitur odio facilisis. In vitae orci pulvinar, varius purus id, interdum orci. Cras finibus, ipsum ultrices pretium volutpat, ex lacus pharetra tellus, ac facilisis augue enim et nulla. Nam turpis nunc, elementum ut laoreet et, hendrerit in ex. Quisque mollis, erat at luctus dignissim, sapien tellus porttitor orci, id semper risus est non magna. Nam eu nunc purus. Nunc cursus blandit risus dapibus tempor. Proin odio massa, ullamcorper nec accumsan eu, imperdiet vel sapien. Phasellus tincidunt risus et consectetur luctus.
-  	</p>
-  </div><!-- /section -->
+  <div class="section section--red section--btm-border">
+    <div class="container">
+      <div class="row row--top-btm-pad">
+        <div class="row__col-med-half">
+          <div class="lexus">
+            <img src="src/images/lexus-bug.jpg">
+          </div><!-- /lexus -->
+        </div><!-- /row__col-med-half -->
+        <div class="row__col-med-half">
+          <div class="row__col-half sponsor--hankook">
+            <img src="src/images/sponsors/hankook.jpg">
+          </div>  
+          <div class="sponsor--synchrony">
+            <img src="src/images/sponsors/synchrony.png">
+          </div>
+          <div class="sponsor--hankook-tires">
+            <img src="src/images/sponsors/hankook-tires.png">
+          </div>
+          <div class="sponsor--carcare-one">
+            <img src="src/images/sponsors/carcare-one.jpg">
+          </div>
+        </div>
+      </div><!-- /row -->
+    </div>
+  </div><!-- /section section--red -->
 
-  <div class="section">
-  	<p>
-  		Maecenas in nulla rhoncus massa euismod egestas. Vivamus id dignissim nisl. Phasellus consequat vehicula nisi, at auctor magna pulvinar a. Aliquam odio elit, aliquam eget dignissim id, maximus eu orci. Quisque hendrerit lorem imperdiet nibh molestie, sed efficitur odio facilisis. In vitae orci pulvinar, varius purus id, interdum orci. Cras finibus, ipsum ultrices pretium volutpat, ex lacus pharetra tellus, ac facilisis augue enim et nulla. Nam turpis nunc, elementum ut laoreet et, hendrerit in ex. Quisque mollis, erat at luctus dignissim, sapien tellus porttitor orci, id semper risus est non magna. Nam eu nunc purus. Nunc cursus blandit risus dapibus tempor. Proin odio massa, ullamcorper nec accumsan eu, imperdiet vel sapien. Phasellus tincidunt risus et consectetur luctus.
-  	</p>
-  </div><!-- /section -->
+  <div class="section section--grey">
+    <div class="container container--wide">
+      <div class="row row--top-pad">
+        <div class="row__col-1fifth sponsor">
+          <img src="src/images/sponsors/jasper.png">
+        </div>
+        <div class="row__col-1fifth sponsor">
+          <img src="src/images/sponsors/monroe.jpg">
+        </div>
+        <div class="row__col-1fifth sponsor">
+           <img src="src/images/sponsors/air-lift.png">
+        </div>
+        <div class="row__col-1fifth sponsor">
+          <img src="src/images/sponsors/wagner.png">
+        </div>
+        <div class="row__col-1fifth sponsor">
+          <img src="src/images/sponsors/michelin.png">
+        </div>
+      </div><!-- /row -->
+      <div class="row">
+        <div class="row__col-1forth sponsor">
+          <img src="src/images/sponsors/mopar.jpg">
+        </div>
+        <div class="row__col-1forth sponsor">
+          <img src="src/images/sponsors/uhaul.png">
+        </div>
+        <div class="row__col-1forth sponsor">
+          <img src="src/images/sponsors/uhaul-big.png">
+        </div>
+        <div class="row__col-1forth sponsor">
+         <img src="src/images/sponsors/interstate-batteries.gif">
+        </div>
+      </div><!-- /row -->      
+      <div class="row">
+        <div class="row__col-1third sponsor">
+          <img src="src/images/sponsors/skyjacker.jpg">
+        </div>
+        <div class="row__col-1third sponsor">
+          <img src="src/images/sponsors/pro-comp.jpg">
+        </div>
+        <div class="row__col-1third sponsor">
+          <img src="src/images/sponsors/flowmaster.png">
+        </div>
+      </div><!-- /row -->
+    </div>
+  </div><!-- /section section--red -->
 
-  <div class="section">
-  	<p>
-  		Maecenas in nulla rhoncus massa euismod egestas. Vivamus id dignissim nisl. Phasellus consequat vehicula nisi, at auctor magna pulvinar a. Aliquam odio elit, aliquam eget dignissim id, maximus eu orci. Quisque hendrerit lorem imperdiet nibh molestie, sed efficitur odio facilisis. In vitae orci pulvinar, varius purus id, interdum orci. Cras finibus, ipsum ultrices pretium volutpat, ex lacus pharetra tellus, ac facilisis augue enim et nulla. Nam turpis nunc, elementum ut laoreet et, hendrerit in ex. Quisque mollis, erat at luctus dignissim, sapien tellus porttitor orci, id semper risus est non magna. Nam eu nunc purus. Nunc cursus blandit risus dapibus tempor. Proin odio massa, ullamcorper nec accumsan eu, imperdiet vel sapien. Phasellus tincidunt risus et consectetur luctus.
-  	</p>
-  </div><!-- /section -->
-
-  <div class="section">
-  	<p>
-		Vivamus finibus dolor vel tempor viverra. Mauris sed velit ut dui dapibus rutrum. Duis eget condimentum eros. Donec sit amet est magna. Nulla gravida mi quam, at ultrices purus rhoncus non. Nam luctus, augue ac porta dignissim, purus nulla aliquam lorem, sed mattis purus massa ut quam. Suspendisse libero tellus, volutpat sed ante nec, auctor viverra neque. In vestibulum augue nec iaculis condimentum. Suspendisse nunc mi, vestibulum ac orci tristique, auctor tempus purus.
-  	</p>
-  </div><!-- /section -->
 
   <footer class="main-footer">
     <div class="container">
-      <p>
-        <span class="main-footer__text">Copyright &copy; 2018 [Biz Name] | All rights reserved | Website by <a href="http://She-Bytes.com">She-Bytes.com</a></span>
-        <a href="#" class="btn open-modal-contact">Contact Us</a>
+      <p class="main-footer__text">
+        Copyright &copy; 2018 South Venice Auto Repair | All rights reserved
       </p>
+      <p>Website by 
+        <a href="http://She-Bytes.com">
+          <img src="src/images/logos/she-bytes.png" alt="She-Bytes.com">
+      </a></p>
     </div><!-- /container -->
   </footer>
 
