@@ -1,0 +1,16 @@
+.section {
+
+	&--btm-border {
+		border-bottom: 10px solid rgba($mainColor, .9);
+	}
+
+	&--red {
+		background-color: $redColor;
+		color: $lightDarkColor;
+	}
+
+	&--grey {
+		background-color: $ltgreyColor;
+		color: $lightDarkColor;
+	}
+}

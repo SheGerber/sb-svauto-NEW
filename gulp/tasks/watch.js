@@ -9,19 +9,19 @@ gulp.task('watch', function(){
 	browserSync.init({
 		notify: false,
 		server: {
-			baseDir: "site"
+			baseDir: "site/dev"
 		}
 	})
 
-	watch('./site/index.html', function(){
+	watch('./site/dev/index.html', function(){
     	browserSync.reload();
 	});
 
-	watch('./site/source/styles/**/*.css', function(){
+	watch('./site/dev/source/styles/**/*.css', function(){
 		gulp.start('cssInject');
 	});
 
-	watch('./site/source/scripts/**/*.js', function(){
+	watch('./site/dev/source/scripts/**/*.js', function(){
 		gulp.start('refreshJS');
 	});
 
@@ -29,7 +29,7 @@ gulp.task('watch', function(){
 
 
 gulp.task('cssInject', ['createCSS'], function() {
-	return gulp.src('./site/temp/styles/style.css')
+	return gulp.src('./site/dev/tempsrc/styles/style.css')
 		.pipe(browserSync.stream());
 });
 

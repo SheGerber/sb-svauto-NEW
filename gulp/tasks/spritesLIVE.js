@@ -23,7 +23,7 @@ var config = {
 			sprite: 'sprite.svg',
 			render: {
 				css: {
-					template: './gulp/templates/spriteDEV.css'
+					template: './gulp/templates/spriteLIVE.css'
 				}
 			}
 		}

@@ -1,0 +1,1 @@
+import "../../tmpsrc/scripts/modernizr";

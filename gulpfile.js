@@ -6,10 +6,10 @@ require('./gulp/tasks/build');
 
 
 require('./gulp/tasks/favicon');
-require('./gulp/tasks/sprites');
+require('./gulp/tasks/spritesLIVE');
 
 /***  FOR GOLIVE -- SHE
-require('./gulp/tasks/zLIVEsprites');
+require('./gulp/tasks/sprites');
 ***/
 
 

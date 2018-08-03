@@ -10,13 +10,13 @@ var gulp = require('gulp'),
 
 gulp.task('createCSS', function(){
 	
-	return gulp.src('./site/source/styles/style.css')
+	return gulp.src('./site/dev/source/styles/style.css')
 		.pipe(postcss([cssimport, mixins, cssvars, nested, hexrgba, autoprefixer]))
 		.on('error', function(errorInfo){
 			console.log(errorInfo.toString());
 			this.emit('end');
 		})
-		.pipe(gulp.dest('./site/temp/styles'));
+		.pipe(gulp.dest('./site/dev/tmpsrc/styles'));
 
 });
 

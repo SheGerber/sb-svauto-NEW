@@ -1,0 +1,97 @@
+.row {
+
+	@mixin clearFix;
+
+	&__col-half {
+		float: left;
+		width: 50%;
+	}
+
+	&__col-1third {
+		float: left;
+		text-align: center;
+		width: 33%;
+	}
+
+	&__col-1forth {
+		float: left;
+		width: 25%;
+	}
+
+	&__col-1fifth {
+		float: left;
+		width: 20%;
+	}
+
+	@mixin forSml {
+	
+		&--top-btm-pad {
+			padding: 15px 0 5px 20px;
+		}
+
+		&__col-sml-1third {
+			float: left;
+			width: 33%;
+		}
+
+		&__col-sml-half {
+			width: 50%;
+		}
+	}
+
+	@mixin forMed {
+
+		&--top-pad {
+			padding-top: 35px;
+		}
+
+		&--top-btm-pad {
+			padding: 75px 0 65px 0;
+		}
+
+		&__col-med-1third {
+			float: left;
+			width: 33%;
+		}
+
+		&__col-med-1third--larger {
+			width: 37%;
+		}
+
+		&__col-med-2third {
+			float: right;
+			width: 66%;
+		}
+
+		&__col-med-2third--smaller {
+			width: 63%;
+		}
+
+		&__col-med-half {
+			float: left;
+			width: 50%;
+		}
+	}
+
+	@mixin forLrg {
+
+		&__col-lrg-1third {
+			float: left;
+			width: 33%;
+		}
+
+		&__col-lrg-1third--larger {
+			width: 39%;
+		}
+
+		&__col-lrg-2third {
+			float: left;
+			width: 66%;
+		}
+
+		&__col-lrg-2third--smaller {
+			padding-left: 40px;
+			width: 61%;
+		}
+	}
+}
